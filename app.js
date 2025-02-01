@@ -28,7 +28,7 @@ const user = require('./routes/user');
 main().catch(err => console.log(err));
 // 'mongodb://127.0.0.1:27017/yelpcamp'
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/yelpcamp');
+    await mongoose.connect(dbUrl);
 }
 
 const db = mongoose.connection;
